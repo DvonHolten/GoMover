@@ -95,7 +95,7 @@ func uploadFile(fullPath string, baseDir string) error {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusCreated {
-		return fmt.Errorf("Upload fehlgeschlagen: %s", resp.Status)
+		return fmt.Errorf("upload fehlgeschlagen: %s", resp.Status)
 	}
 
 	return nil
@@ -148,7 +148,7 @@ func main() {
 
 	MainWindow{
 		AssignTo: &mw,
-		Title:    "Lokaler Datei-Uploader & Server",
+		Title:    "Lokaler Datei-Uploader & Server (Juli2025)",
 		MinSize:  Size{Width: 500, Height: 300},
 		Layout:   VBox{},
 		Children: []Widget{
